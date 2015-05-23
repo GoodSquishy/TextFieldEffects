@@ -11,6 +11,7 @@ Currently it features the following effects from the article:
 - [x] Minoru
 - [x] Yoko
 - [x] Madoka
+- [x] Kyo
 
 ## How they look
 
@@ -34,6 +35,9 @@ Currently it features the following effects from the article:
 
 ### Madoka
 <img src="https://raw.githubusercontent.com/raulriera/TextFieldEffects/master/Screenshots/Madoka.gif" />
+
+### Madoka
+<img src="https://raw.githubusercontent.com/raulriera/TextFieldEffects/master/Screenshots/Kyo.gif" />
 
 ## Installation
 
