@@ -36,7 +36,7 @@ Currently it features the following effects from the article:
 ### Madoka
 <img src="https://raw.githubusercontent.com/raulriera/TextFieldEffects/master/Screenshots/Madoka.gif" />
 
-### Madoka
+### Kyo
 <img src="https://raw.githubusercontent.com/raulriera/TextFieldEffects/master/Screenshots/Kyo.gif" />
 
 ## Installation
