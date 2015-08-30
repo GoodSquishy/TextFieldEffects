@@ -11,39 +11,54 @@ Currently it features the following effects from the article:
 - [x] Minoru
 - [x] Yoko
 - [x] Madoka
+- [x] Akira
 - [x] Kyo
 
 ## How they look
 
 ### Kaede
-<img src="https://raw.githubusercontent.com/raulriera/TextFieldEffects/master/Screenshots/Kaede.gif" />
+<img src="/Screenshots/Kaede.gif" />
 
 ### Hoshi
-<img src="https://raw.githubusercontent.com/raulriera/TextFieldEffects/master/Screenshots/Hoshi.gif" />
+<img src="/Screenshots/Hoshi.gif" />
 
 ### Jiro
-<img src="https://raw.githubusercontent.com/raulriera/TextFieldEffects/master/Screenshots/Jiro.gif" />
+<img src="/Screenshots/Jiro.gif" />
 
 ### Isao
-<img src="https://raw.githubusercontent.com/raulriera/TextFieldEffects/master/Screenshots/Isao.gif" />
+<img src="/Screenshots/Isao.gif" />
 
 ### Minoru
-<img src="https://raw.githubusercontent.com/raulriera/TextFieldEffects/master/Screenshots/Minoru.gif" />
+<img src="/Screenshots/Minoru.gif" />
 
 ### Yoko
-<img src="https://raw.githubusercontent.com/raulriera/TextFieldEffects/master/Screenshots/Yoko.gif" />
+<img src="/Screenshots/Yoko.gif" />
 
 ### Madoka
-<img src="https://raw.githubusercontent.com/raulriera/TextFieldEffects/master/Screenshots/Madoka.gif" />
+<img src="/Screenshots/Madoka.gif" />
+
+### Akira
+<img src="/Screenshots/Akira.gif" />
 
 ### Kyo
-<img src="https://raw.githubusercontent.com/raulriera/TextFieldEffects/master/Screenshots/Kyo.gif" />
+<img src="/Screenshots/Kyo.gif" />
 
 ## Installation
+
+Looking for Swift 1.2 support? Check out the `swift-1.2` branch.
 
 ### Manual
 
 The easiest way to install this framework is to drag and drop the `TextFieldEffects/TextFieldEffects` folder into your project. This also prevents the `frameworks` problem in iOS where the IBInspectable and IBDesignable are stripped out.
+
+### Cocoapods
+
+Add the following to your Podfile:
+
+``` ruby
+use_frameworks!
+pod "TextFieldEffects"
+```
 
 ### Carthage
 
@@ -53,7 +68,9 @@ Add the following to your Cartfile:
 github "raulriera/TextFieldEffects"
 ```
 
-
 ## How to use them
 
 Check out the demo project to see the configuration options for each effect.
+
+## Created by
+Raul Riera, [@raulriera](http://twitter.com/raulriera)

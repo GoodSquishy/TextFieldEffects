@@ -9,49 +9,34 @@
 import Foundation
 import UIKit
 
-protocol TextFieldsEffectsProtocol {
-    func drawViewsForRect(rect: CGRect)
-    func updateViewsForBoundsChange(bounds: CGRect)
-    func animateViewsForTextEntry()
-    func animateViewsForTextDisplay()
+extension String {
+    public var isNotEmpty: Bool {
+        return !isEmpty
+    }
 }
 
-public class TextFieldEffects : UITextField, TextFieldsEffectsProtocol {
+public class TextFieldEffects : UITextField {
     
     let placeholderLabel = UILabel()
     
-    func animateViewsForTextEntry() {
+    public func animateViewsForTextEntry() {
         fatalError("\(__FUNCTION__) must be overridden")
     }
     
-    func animateViewsForTextDisplay() {
+    public func animateViewsForTextDisplay() {
         fatalError("\(__FUNCTION__) must be overridden")
     }
     
-    func drawViewsForRect(rect: CGRect) {
+    public func drawViewsForRect(rect: CGRect) {
         fatalError("\(__FUNCTION__) must be overridden")
     }
     
-    func updateViewsForBoundsChange(bounds: CGRect) {
+    public func updateViewsForBoundsChange(bounds: CGRect) {
         fatalError("\(__FUNCTION__) must be overridden")
     }
     
     override public func prepareForInterfaceBuilder() {
         drawViewsForRect(frame)
-    }
-    
-    // MARK: - Initializers
-    
-    public override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
-    
-    required public init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    
-    override public func awakeFromNib() {
-        super.awakeFromNib()
     }
     
     // MARK: - Overrides
