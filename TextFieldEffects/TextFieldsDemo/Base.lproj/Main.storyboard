@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kzy-mN-NiP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kzy-mN-NiP">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -14,38 +14,50 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
-                            <tableViewSection headerTitle="Kyo" id="ZCT-bV-xav" userLabel="Kyo">
+                            <tableViewSection headerTitle="Kyo" id="wqq-BW-g9B" userLabel="Kyo">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="66" id="Guv-6s-6Ni">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="120" id="Z78-x5-mEd">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Guv-6s-6Ni" id="gBf-Me-9y4">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z78-x5-mEd" id="qRG-Zw-pxx">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="What's your email?" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cvN-5e-bPf" customClass="KyoTextField" customModule="TextFieldEffects">
-                                                    <rect key="frame" x="8" y="0.0" width="584" height="66"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="What's your email?" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cxW-rL-g1T" customClass="KyoTextField" customModule="TextFieldEffects">
+                                                    <rect key="frame" x="8" y="32" width="584" height="66"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="66" id="5k9-UK-dVp"/>
+                                                    </constraints>
                                                     <color key="textColor" red="0.41568627450000001" green="0.47450980390000003" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="20"/>
+                                                            <real key="value" value="22"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="color" keyPath="highlightViewColor">
-                                                            <color key="value" red="0.090526763100000004" green="0.36657045669999999" blue="1" alpha="0.75" colorSpace="calibratedRGB"/>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="activeColor">
+                                                            <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="color" keyPath="superImposedBackgroundColor">
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="textFieldBackgroundColor">
                                                             <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="activeTextColor">
+                                                            <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="inActiveColor">
+                                                            <color key="value" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="fadeSpeed">
+                                                            <real key="value" value="0.25"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstItem="cvN-5e-bPf" firstAttribute="top" secondItem="gBf-Me-9y4" secondAttribute="top" id="4U7-nj-TIQ"/>
-                                                <constraint firstAttribute="trailing" secondItem="cvN-5e-bPf" secondAttribute="trailing" constant="8" id="Mtx-h2-SCp"/>
-                                                <constraint firstItem="cvN-5e-bPf" firstAttribute="leading" secondItem="gBf-Me-9y4" secondAttribute="leading" constant="8" id="mSX-K2-Q1E"/>
-                                                <constraint firstAttribute="bottom" secondItem="cvN-5e-bPf" secondAttribute="bottom" id="tHw-7u-bkQ"/>
+                                                <constraint firstItem="cxW-rL-g1T" firstAttribute="leading" secondItem="qRG-Zw-pxx" secondAttribute="leadingMargin" id="0RD-bP-KoW"/>
+                                                <constraint firstAttribute="centerY" secondItem="cxW-rL-g1T" secondAttribute="centerY" constant="-5" id="6uX-q4-j2B"/>
+                                                <constraint firstItem="cxW-rL-g1T" firstAttribute="trailing" secondItem="qRG-Zw-pxx" secondAttribute="trailingMargin" id="NZO-hs-7Pq"/>
+                                                <constraint firstAttribute="centerX" secondItem="cxW-rL-g1T" secondAttribute="centerX" id="qpy-jL-jQT"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
