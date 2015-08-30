@@ -18,16 +18,17 @@ import UIKit
 
     @IBInspectable var fadeSpeed: Double = 0
     @IBInspectable var activeColor: UIColor?
-    @IBInspectable var inActiveColor: UIColor?
     @IBInspectable var activeTextColor: UIColor?
     @IBInspectable var textFieldBackgroundColor: UIColor?
-    private var textFieldBackgroundView = UIView()
     
-    override func drawViewsForRect(rect: CGRect) {
-        let frame = CGRect(origin: CGPointZero, size: CGSize(width: rect.size.width, height: rect.size.height))
-        
+    private var textFieldBackgroundView = UIView()
+    private var inActiveColor = UIColor()
+    
+    override public func drawViewsForRect(rect: CGRect) {
         updateBorder()
         updatePlaceholder()
+        
+        inActiveColor = (superview?.backgroundColor)!
         
         addSubview(placeholderLabel)
         addTextFieldBackgroundView()
@@ -42,7 +43,7 @@ import UIKit
         placeholderLabel.text = placeholder
         placeholderLabel.textColor = textColor
         placeholderLabel.sizeToFit()
-        placeholderLabel.font = placeholderFontFromFont(font)
+        placeholderLabel.font = placeholderFontFromFont(font!)
         placeholderLabel.frame = CGRect(x: cornerRadius, y: frame.height - placeholderLabel.frame.size.height, width: placeholderLabel.frame.width, height: placeholderLabel.frame.height)
     }
     
@@ -66,14 +67,14 @@ import UIKit
         return UIFont(name: font.fontName, size: font.pointSize * 0.65)
     }
 
-    override func animateViewsForTextEntry() {
+    public override func animateViewsForTextEntry() {
         UIView.animateWithDuration(fadeSpeed, animations: { () -> Void in
             self.superview?.backgroundColor = self.activeColor
             self.placeholderLabel.textColor = self.activeTextColor
         })
     }
     
-    override func animateViewsForTextDisplay() {
+    public override func animateViewsForTextDisplay() {
         UIView.animateWithDuration(fadeSpeed, animations: { () -> Void in
             self.superview?.backgroundColor = self.inActiveColor
             self.placeholderLabel.textColor = self.textColor
@@ -81,11 +82,11 @@ import UIKit
     }
     
     override public func editingRectForBounds(bounds: CGRect) -> CGRect {
-        return CGRect(x: cornerRadius, y: (textFieldBackgroundView.frame.size.height - font.lineHeight) / 2, width: frame.size.width, height: frame.size.height)
+        return CGRect(x: cornerRadius, y: (textFieldBackgroundView.frame.size.height - font!.lineHeight) / 2, width: frame.size.width, height: frame.size.height)
     }
     
     override public func textRectForBounds(bounds: CGRect) -> CGRect {
-        return CGRect(x: cornerRadius, y: (textFieldBackgroundView.frame.size.height - font.lineHeight) / 2, width: frame.size.width, height: frame.size.height)
+        return CGRect(x: cornerRadius, y: (textFieldBackgroundView.frame.size.height - font!.lineHeight) / 2, width: frame.size.width, height: frame.size.height)
     }
 
 }
