@@ -638,9 +638,6 @@
                                                         <userDefinedRuntimeAttribute type="color" keyPath="activeTextColor">
                                                             <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="color" keyPath="inActiveColor">
-                                                            <color key="value" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                        </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="fadeSpeed">
                                                             <real key="value" value="0.25"/>
                                                         </userDefinedRuntimeAttribute>
